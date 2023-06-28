@@ -102,7 +102,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #define ENC_TRNS { {KC_TRNS, KC_TRNS}, {KC_TRNS, KC_TRNS} }
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [_QWERTY] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU), ENCODER_CCW_CW(KC_LEFT, KC_RGHT) },
-    [_LOWER]  = { ENCODER_CCW_CW(_______, _______), ENCODER_CCW_CW(KC_DOWN, KC_UP)   },
+    [_LOWER]  = { ENCODER_CCW_CW(_______, _______), ENCODER_CCW_CW(KC_UP,   KC_DOWN) },
     [_RAISE]  = { ENCODER_CCW_CW(KC_PGDN, KC_PGUP), ENCODER_CCW_CW(_______, _______) },
     [_ADJUST] = ENC_TRNS,
     [_EMOD]   = ENC_TRNS,
