@@ -153,7 +153,19 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         SIMPLE_MACRO(KC_LEQ, "<=");
         SIMPLE_MACRO(KC_GEQ, ">=");
         SIMPLE_MACRO(KC_NEQ, "!=");
-        SIMPLE_MACRO(KC_ARRW, (get_mods() & MOD_MASK_SHIFT) ? "=>" : "->");
+
+        case KC_ARRW:
+            if (pressed) {
+                uint8_t mods = get_mods();
+                del_mods(MOD_MASK_SHIFT);
+                if (mods & MOD_MASK_SHIFT) {
+                    SEND_STRING("=>");
+                } else {
+                    SEND_STRING("->");
+                }
+                set_mods(mods);
+            }
+            break;
 
         default:
             break;
