@@ -73,10 +73,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_EMOD] = LAYOUT(
-  ___, ___, ___, ___, ____, ___,          /**/          G(KC_LEFT), G(KC_DOWN), G(KC_UP),  G(KC_RGHT), ___, ______,
-  ___, ___, ___, ___, ____, ___,          /**/          A(KC_LEFT), A(KC_DOWN), A(KC_UP),  A(KC_RGHT), ___, ______,
-  ___, ___, ___, ___, MONP, ___,          /**/            KC_LEFT,    KC_DOWN,    KC_UP,     KC_RGHT,  ___, KC_ENT,
-  ___, ___, ___, ___, ____, ___, _______, /**/ _______, C(KC_LEFT), C(KC_DOWN), C(KC_UP),  C(KC_RGHT), ___, ______,
+  KC_PSCR, ___, ___, ___, ____, ___,          /**/          G(KC_LEFT), G(KC_DOWN), G(KC_UP),  G(KC_RGHT), ___, ______,
+  _______, ___, ___, ___, ____, ___,          /**/          A(KC_LEFT), A(KC_DOWN), A(KC_UP),  A(KC_RGHT), ___, ______,
+  _______, ___, ___, ___, MONP, ___,          /**/            KC_LEFT,    KC_DOWN,    KC_UP,     KC_RGHT,  ___, KC_ENT,
+  _______, ___, ___, ___, ____, ___, _______, /**/ _______, C(KC_LEFT), C(KC_DOWN), C(KC_UP),  C(KC_RGHT), ___, ______,
             ___, ___, ____, ___, KC_UNDS, /**/ KC_UNDS,   KC_HOME,    KC_PGDN,    KC_PGUP,   KC_END
 ),
 

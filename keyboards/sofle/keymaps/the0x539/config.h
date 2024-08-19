@@ -10,7 +10,7 @@
 
 #define CUSTOM_LAYER_READ // what does this do? I can't find any uses of it in the source code
 
-#define ENCODER_DIRECTION_FLIP
+// #define ENCODER_DIRECTION_FLIP
 #undef ENCODER_RESOLUTION
 #define ENCODER_RESOLUTION 4                                                                                                                                                                                     
 
